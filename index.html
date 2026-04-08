@@ -1,5 +1,6 @@
-<!DOCTYPE pre>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
   <title>Nicolás Llanos | Portafolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Background Animated Elements -->
@@ -21,6 +25,7 @@
     <div class="logo">nicolastllanos.</div>
     <ul class="nav-links">
       <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#education">Formación</a></li>
       <li><a href="#skills">Habilidades</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#contact">Contacto</a></li>
@@ -31,24 +36,69 @@
     <!-- Hero Section -->
     <section class="hero reveal">
       <div class="hero-content">
+        <!-- Foto de perfil -->
+        <div class="profile-img-container">
+          <img src="perfil.jpg" alt="Nicolás Llanos" class="profile-img" />
+        </div>
         <h1 class="glitch-text">Hola, soy <span class="accent">Nicolás Llanos</span></h1>
-        <p class="subtitle">Documentando y construyendo flujos de inteligencia con Datos y Machine Learning.</p>
+        <p class="subtitle">Ingeniero Civil Industrial y Data Scientist, especializado en construir soluciones de
+          negocio con Machine Learning.</p>
         <div class="cta-group">
           <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-          <a href="#contact" class="btn btn-secondary">Contactar</a>
+          <!-- CV en pdf -->
+          <a href="CV_Nicolas_Llanos.pdf" class="btn btn-secondary cv-btn" download>Descargar CV</a>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Sobre mi -->
     <section id="about" class="reveal">
       <h2 class="section-title">Sobre mí</h2>
       <div class="glass-card about-card">
-        <p>Soy un Data Scientist apasionado por transformar bases de datos en conocimiento aplicable. Me enfoco en aplicar análisis estadístico riguroso, modelos predictivos de Machine Learning y motores de Big Data para resolver problemas reales del mundo de negocios y aportar valor a gran escala.</p>
+        <p>Soy un Data Scientist apasionado por transformar bases de datos en conocimiento aplicable. Me enfoco en
+          aplicar análisis estadístico riguroso, modelos predictivos de Machine Learning y motores de Big Data para
+          resolver problemas reales del mundo de negocios y aportar valor a gran escala.</p>
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Educación -->
+    <section id="education" class="reveal">
+      <h2 class="section-title">Trayectoria Académica</h2>
+      <div class="education-grid">
+
+        <div class="glass-card edu-card">
+          <div class="edu-header">
+            <h3>Ingeniería Civil Industrial</h3>
+            <span>Universidad de Valparaíso</span>
+          </div>
+          <p>Formación universitaria rigurosa orientada a la optimización de procesos, estadística inferencial y
+            analítica de negocios.</p>
+        </div>
+
+        <div class="glass-card edu-card">
+          <div class="edu-header">
+            <h3>Especialidad en Ciencia de Datos</h3>
+            <span>SENCE & Talento Digital</span>
+          </div>
+          <p>Entrenamiento intensivo becado enfocado en Python, Big Data, análisis estadístico y despliegue de Modelos
+            de Machine Learning (Supervisado y No Supervisado).</p>
+        </div>
+
+        <div class="glass-card edu-card cert-card">
+          <div class="edu-header">
+            <h3>Certificaciones Profesionales</h3>
+            <span>Validaciones de Plataforma</span>
+          </div>
+          <p>He complementado mi carrera con diversas licencias y certificaciones adicionales que evidencian mi
+            compromiso con la tecnología.</p>
+          <a href="https://www.linkedin.com/in/nicol%C3%A1s-llanos-a47a4a2a7/details/certifications/" target="_blank"
+            class="btn btn-small btn-secondary mt-2">Visitar Certificaciones en LinkedIn</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Habilidades -->
     <section id="skills" class="reveal">
       <h2 class="section-title">Habilidades</h2>
       <div class="skills-grid">
@@ -67,55 +117,107 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Proyectos -->
     <section id="projects" class="reveal">
       <h2 class="section-title">Mis Proyectos</h2>
       <div class="projects-grid">
-        
-        <!-- Proyecto 1 -->
+
+        <!-- Proyecto 1: E-commerce Prediccion -->
         <article class="project-card glass-card">
-          <div class="project-img-placeholder">
-            <span>Predicción E-commerce</span>
+          <div class="project-metrics-display">
+            <span class="metric-value">95.8%</span>
+            <span class="metric-label">Precisión Predictiva</span>
           </div>
           <div class="project-info">
-            <h3>Gasto en Clientes Minoristas</h3>
-            <p>Modelo de regresión en Python para predecir el gasto anual usando Ridge, Lasso, KNN y Gradient Boosting.</p>
+            <h3>Predicción de Compras en E-commerce</h3>
+            <p>Algoritmo para anticipar cuánto gastarán los clientes en el futuro. El análisis demostró de forma clara
+              que la lealtad del cliente es el motor principal de ventas, facilitando decisiones de retención.</p>
+            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Modelado predictivo (Regresión),
+              limpieza exhaustiva de datos y evaluación de métricas de precisión técnica.</p>
             <div class="project-tags">
-              <span>Python</span>
               <span>Machine Learning</span>
+              <span>Python</span>
             </div>
-            <a href="https://github.com/nicolastllanos/Prediccion-Inteligente-de-Gasto-en-Clientes-E-commerce" target="_blank" class="btn btn-small">Ver en GitHub</a>
+            <a href="https://github.com/nicolastllanos/Prediccion-Inteligente-de-Gasto-en-Clientes-E-commerce"
+              target="_blank" class="btn btn-small">Ver en GitHub</a>
           </div>
         </article>
 
-        <!-- Proyecto 2 -->
+        <!-- Proyecto 2: Big Data RetailMax -->
         <article class="project-card glass-card">
-          <div class="project-img-placeholder">
-            <span>Segmentación de Clientes</span>
+          <div class="project-metrics-display">
+            <span class="metric-value">+1M</span>
+            <span class="metric-label">Registros Procesados</span>
           </div>
           <div class="project-info">
-            <h3>Clustering Predictivo</h3>
-            <p>Segmentación con K-Means y DBSCAN sobre datos RFM. Incluye análisis de silueta, PCA y t-SNE.</p>
+            <h3>Análisis Masivo de Datos (Retail)</h3>
+            <p>Sistema distribuido capaz de procesar millones de transacciones de E-commerce de forma ultra-rápida.
+              Permite detectar tendencias de compra y optimizar operaciones a gran escala.</p>
+            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Arquitectura Big Data distribuda,
+              diseño de pipelines ETL y despliegue de Machine Learning masivo.</p>
             <div class="project-tags">
-              <span>Pandas</span>
-              <span>Clustering</span>
+              <span>Apache Spark</span>
+              <span>Big Data</span>
             </div>
-            <a href="https://github.com/nicolastllanos/Segmentador-Inteligente-de-Clientes-Minoristas" target="_blank" class="btn btn-small">Ver en GitHub</a>
+            <a href="https://github.com/nicolastllanos/Retail-Analytics-Pipeline" target="_blank"
+              class="btn btn-small">Ver en GitHub</a>
           </div>
         </article>
+
+        <!-- Proyecto 3: Segmentacion Clientes -->
+        <article class="project-card glass-card">
+          <div class="project-metrics-display">
+            <span class="metric-value">22.8%</span>
+            <span class="metric-label">Clientes VIP Detectados</span>
+          </div>
+          <div class="project-info">
+            <h3>Segmentación Automática de Clientes</h3>
+            <p>Sistema inteligente que agrupa compradores basado en sus hábitos reales. Esto permite al equipo de
+              marketing lanzar promociones altamente efectivas al grupo más valioso de consumidores.</p>
+            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Aprendizaje No Supervisado
+              (Clustering), técnicas de reducción dimensional y estrategias de análisis RFM.</p>
+            <div class="project-tags">
+              <span>Clustering</span>
+              <span>Análisis de Datos</span>
+            </div>
+            <a href="https://github.com/nicolastllanos/Segmentador-Inteligente-de-Clientes-Minoristas" target="_blank"
+              class="btn btn-small">Ver en GitHub</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 4: EDA Autos -->
+        <article class="project-card glass-card">
+          <div class="project-metrics-display">
+            <span class="metric-value">0.62</span>
+            <span class="metric-label">Correlación Año-Precio</span>
+          </div>
+          <div class="project-info">
+            <h3>Análisis Exploratorio de Datos (EDA)</h3>
+            <p>Evaluación exhaustiva del mercado automotriz para descubrir qué elementos dictan el precio de venta. El
+              análisis finaliza en un reporte visual estadístico que apoya decisiones informadas de negocio.</p>
+            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Estadística descriptiva e
+              inferencial, detección de anomalías (outliers) y visualización avanzada (Storytelling).</p>
+            <div class="project-tags">
+              <span>Visualización</span>
+              <span>Estadística</span>
+            </div>
+            <a href="https://github.com/nicolastllanos/An-lisis-exploratorio-de-datos" target="_blank"
+              class="btn btn-small">Ver en GitHub</a>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contacto -->
     <section id="contact" class="reveal">
       <h2 class="section-title">Hablemos</h2>
       <div class="glass-card contact-card">
         <p>¿Tienes una oportunidad interesante o quieres colaborar? Mi bandeja de entrada siempre está lista.</p>
-        <a href="mailto:tu-correo@ejemplo.com" class="btn btn-primary">Envíame un correo</a>
+        <a href="mailto:nicolas.llanos@alumni.uv.cl" class="btn btn-primary">Envíame un correo</a>
         <div class="social-links mt-4">
           <a href="https://github.com/nicolastllanos" target="_blank">GitHub</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Twitter</a>
+          <a href="https://www.linkedin.com/in/nicol%C3%A1s-llanos-a47a4a2a7/">LinkedIn</a>
         </div>
       </div>
     </section>
@@ -127,4 +229,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
