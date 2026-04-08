@@ -24,7 +24,8 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background: var(--bg-gradient);
+  background-color: var(--bg-color); /* Respaldo para prevenir fondo blanco en iOS si falla el gradiente */
+  background-image: var(--bg-gradient);
   background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.6;
@@ -80,6 +81,7 @@ h6 {
   z-index: -1;
   opacity: 0.5;
   animation: float 20s infinite alternate;
+  transform: translateZ(0); /* Aceleración por hardware para prevenir errores visuales en Safari */
 }
 
 .blob-1 {
@@ -626,6 +628,14 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Soluciona el error del fondo blanco en Safari iOS */
+  }
+
+  .blob {
+    filter: blur(60px); /* Desenfoque más ligero para evitar problemas en móviles */
+  }
+
   .nav-links {
     display: none;
     /* In a full app, add a hamburger menu */
