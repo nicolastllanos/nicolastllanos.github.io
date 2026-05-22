@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de Nicolás Llanos, desarrollador y entusiasta tecnológico.">
+  <meta name="description" content="Portafolio de Nicolás Llanos — Ingeniero Civil Industrial orientado a Data Science, Machine Learning y Analytics. Proyectos con Python, SQL, PySpark y Power BI.">
   <title>Nicolás Llanos | Portafolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,8 +42,8 @@
           <img src="perfil.jpg" alt="Nicolás Llanos" class="profile-img" />
         </div>
         <h1 class="glitch-text">Hola, soy <span class="accent">Nicolás Llanos</span></h1>
-        <p class="subtitle">Ingeniero Civil Industrial y Data Scientist, especializado en construir soluciones de
-          negocio con Machine Learning.</p>
+        <p class="subtitle hero-role">Ingeniero Civil Industrial | Data Analyst / Data Scientist Jr.</p>
+        <p class="subtitle hero-tagline">Construyo soluciones de analítica, automatización y machine learning para problemas de negocio.</p>
         <div class="cta-group">
           <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
           <!-- CV en pdf -->
@@ -56,9 +56,7 @@
     <section id="about" class="reveal">
       <h2 class="section-title">Sobre mí</h2>
       <div class="glass-card about-card">
-        <p>Soy un Data Scientist apasionado por transformar bases de datos en conocimiento aplicable. Me enfoco en
-          aplicar análisis estadístico riguroso, modelos predictivos de Machine Learning y motores de Big Data para
-          resolver problemas reales del mundo de negocios y aportar valor a gran escala.</p>
+        <p>Soy Ingeniero Civil Industrial orientado a Data Science y Analytics. Trabajo con Python, SQL, Power BI, machine learning y pipelines ETL para transformar datos en decisiones de negocio. Me interesa aportar en roles junior de Data Analyst, Data Scientist Jr. o Analytics Engineer Jr.</p>
       </div>
     </section>
 
@@ -105,15 +103,37 @@
       <div class="skills-grid">
         <div class="skill-card glass-card">
           <h3>Data Science & Análisis</h3>
-          <p>Python, Pandas, NumPy, Análisis Estadístico Exploratorio (EDA)</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">EDA</span>
+          </div>
         </div>
         <div class="skill-card glass-card">
           <h3>Machine Learning</h3>
-          <p>Scikit-Learn, Regresión, K-Means Clustering, DBSCAN, Gradient Boosting</p>
+          <div class="skill-tags">
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">Regresión</span>
+            <span class="skill-tag">K-Means</span>
+            <span class="skill-tag">DBSCAN</span>
+            <span class="skill-tag">Gradient Boosting</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">TensorFlow / Keras</span>
+          </div>
         </div>
         <div class="skill-card glass-card">
-          <h3>Herramientas y Big Data</h3>
-          <p>Jupyter Notebooks, Git, GitHub, Motores de Big Data</p>
+          <h3>Herramientas & Big Data</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PySpark</span>
+            <span class="skill-tag">Spark SQL</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Streamlit</span>
+          </div>
         </div>
       </div>
     </section>
@@ -126,39 +146,39 @@
         <!-- Proyecto 1: E-commerce Prediccion -->
         <article class="project-card glass-card">
           <div class="project-metrics-display">
-            <span class="metric-value">95.8%</span>
-            <span class="metric-label">Precisión Predictiva</span>
+            <span class="metric-value">R² = 0.96</span>
+            <span class="metric-label">MAE = $9.80</span>
           </div>
           <div class="project-info">
-            <h3>Predicción de Compras en E-commerce</h3>
-            <p>Algoritmo para anticipar cuánto gastarán los clientes en el futuro. El análisis demostró de forma clara
-              que la lealtad del cliente es el motor principal de ventas, facilitando decisiones de retención.</p>
-            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Modelado predictivo (Regresión),
-              limpieza exhaustiva de datos y evaluación de métricas de precisión técnica.</p>
+            <h3>Predicción de Gasto en E-commerce</h3>
+            <p>Comparación de 5 modelos de regresión (Lineal, Ridge, Lasso, KNN, Gradient Boosting) para estimar gasto anual de clientes. La regresión lineal resultó óptima, identificando la antigüedad del cliente como predictor principal (66.5% del gasto).</p>
+            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Benchmark de modelos con GridSearchCV,
+              validación cruzada K-Fold, limpieza de outliers (IQR) y estandarización Z-Score.</p>
             <div class="project-tags">
-              <span>Machine Learning</span>
-              <span>Python</span>
+              <span>Regresión</span>
+              <span>scikit-learn</span>
+              <span>GridSearchCV</span>
             </div>
             <a href="https://github.com/nicolastllanos/Prediccion-Inteligente-de-Gasto-en-Clientes-E-commerce"
               target="_blank" class="btn btn-small">Ver en GitHub</a>
           </div>
         </article>
 
-        <!-- Proyecto 2: Big Data RetailMax -->
+        <!-- Proyecto 2: Big Data Retail -->
         <article class="project-card glass-card">
           <div class="project-metrics-display">
             <span class="metric-value">+1M</span>
             <span class="metric-label">Registros Procesados</span>
           </div>
           <div class="project-info">
-            <h3>Análisis Masivo de Datos (Retail)</h3>
-            <p>Sistema distribuido capaz de procesar millones de transacciones de E-commerce de forma ultra-rápida.
-              Permite detectar tendencias de compra y optimizar operaciones a gran escala.</p>
-            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Arquitectura Big Data distribuda,
-              diseño de pipelines ETL y despliegue de Machine Learning masivo.</p>
+            <h3>Pipeline ETL Distribuido (Retail)</h3>
+            <p>Pipeline de 5 etapas en PySpark sobre el dataset Olist (Kaggle): ingesta de 3 tablas CSV, transformaciones con RDD y DataFrames, agregaciones con Spark SQL, exportación a Parquet y entrenamiento de K-Means + Regresión Logística con MLlib.</p>
+            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> PySpark, Spark SQL, Spark MLlib,
+              formato Parquet y configuración de SparkSession.</p>
             <div class="project-tags">
-              <span>Apache Spark</span>
-              <span>Big Data</span>
+              <span>PySpark</span>
+              <span>Spark SQL</span>
+              <span>MLlib</span>
             </div>
             <a href="https://github.com/nicolastllanos/Retail-Analytics-Pipeline" target="_blank"
               class="btn btn-small">Ver en GitHub</a>
@@ -173,39 +193,61 @@
           </div>
           <div class="project-info">
             <h3>Segmentación Automática de Clientes</h3>
-            <p>Sistema inteligente que agrupa compradores basado en sus hábitos reales. Esto permite al equipo de
-              marketing lanzar promociones altamente efectivas al grupo más valioso de consumidores.</p>
-            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Aprendizaje No Supervisado
-              (Clustering), técnicas de reducción dimensional y estrategias de análisis RFM.</p>
+            <p>Clustering con K-Means, DBSCAN y jerárquico sobre features RFM de e-commerce. Evaluación con análisis de silueta y visualización de segmentos con PCA y t-SNE para identificar el grupo más rentable.</p>
+            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> K-Means, DBSCAN,
+              PCA, t-SNE, análisis de silueta y segmentación RFM.</p>
             <div class="project-tags">
               <span>Clustering</span>
-              <span>Análisis de Datos</span>
+              <span>PCA / t-SNE</span>
+              <span>RFM</span>
             </div>
             <a href="https://github.com/nicolastllanos/Segmentador-Inteligente-de-Clientes-Minoristas" target="_blank"
               class="btn btn-small">Ver en GitHub</a>
           </div>
         </article>
 
-        <!-- Proyecto 4: EDA Autos -->
+        <!-- Proyecto 4: EDA BMW -->
         <article class="project-card glass-card">
           <div class="project-metrics-display">
-            <span class="metric-value">0.62</span>
-            <span class="metric-label">Correlación Año-Precio</span>
+            <span class="metric-value">r = 0.62</span>
+            <span class="metric-label">R² ≈ 0.39</span>
           </div>
           <div class="project-info">
-            <h3>Análisis Exploratorio de Datos (EDA)</h3>
-            <p>Evaluación exhaustiva del mercado automotriz para descubrir qué elementos dictan el precio de venta. El
-              análisis finaliza en un reporte visual estadístico que apoya decisiones informadas de negocio.</p>
-            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Estadística descriptiva e
-              inferencial, detección de anomalías (outliers) y visualización avanzada (Storytelling).</p>
+            <h3>EDA: Precios de Autos BMW</h3>
+            <p>Análisis exploratorio sobre dataset de autos BMW usados. Estudio de outliers, correlaciones entre año, kilometraje, transmisión y precio, con modelado predictivo complementario usando pandas y Seaborn.</p>
+            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Estadística descriptiva,
+              detección de outliers, Seaborn/Matplotlib y storytelling con datos.</p>
             <div class="project-tags">
-              <span>Visualización</span>
-              <span>Estadística</span>
+              <span>EDA</span>
+              <span>pandas</span>
+              <span>Seaborn</span>
             </div>
             <a href="https://github.com/nicolastllanos/An-lisis-exploratorio-de-datos" target="_blank"
               class="btn btn-small">Ver en GitHub</a>
           </div>
         </article>
+
+        <!-- Proyecto 5: Clasificador de Imágenes CNN -->
+        <article class="project-card glass-card">
+          <div class="project-metrics-display">
+            <span class="metric-value">CNN</span>
+            <span class="metric-label">Fashion-MNIST</span>
+          </div>
+          <div class="project-info">
+            <h3>Clasificador de Imágenes de Ropa</h3>
+            <p>Clasificación de 10 categorías de prendas usando redes densas y redes convolucionales (CNN) sobre el dataset Fashion-MNIST. Comparación de arquitecturas para evaluar ganancia de accuracy con capas convolucionales.</p>
+            <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Deep Learning,
+              redes convolucionales (CNN), TensorFlow/Keras y clasificación de imágenes.</p>
+            <div class="project-tags">
+              <span>Deep Learning</span>
+              <span>CNN</span>
+              <span>TensorFlow</span>
+            </div>
+            <a href="https://github.com/nicolastllanos/Clasificador-Inteligente-de-Imagenes-de-Ropa" target="_blank"
+              class="btn btn-small">Ver en GitHub</a>
+          </div>
+        </article>
+
 
       </div>
     </section>
@@ -222,17 +264,17 @@
         <div class="case-study-grid">
           <div class="cs-item glass-card">
             <h4><span class="accent">1.</span> Breve descripción de la tarea</h4>
-            <p>Construir un pipeline continuo de procesamiento de datos y Machine Learning para "RetailMax", analizando millones de transacciones históricas, reseñas y actividades de E-commerce.</p>
+            <p>Construir un pipeline ETL distribuido con PySpark para procesar +1M de transacciones históricas de retail, aplicar limpieza y agregaciones, y entrenar modelos de segmentación.</p>
           </div>
           
           <div class="cs-item glass-card">
             <h4><span class="accent">2.</span> Desafío principal</h4>
-            <p>El volumen masivo de datos imposibilitaba el uso de herramientas tradicionales en memoria (como Pandas), causando caídas del sistema y cuellos de botella para extraer cualquier valor analítico.</p>
+            <p>El volumen de datos excedía la capacidad de procesamiento en memoria con herramientas como pandas, generando cuellos de botella que impedían extraer valor analítico.</p>
           </div>
 
           <div class="cs-item glass-card">
             <h4><span class="accent">3.</span> Solución propuesta</h4>
-            <p>Migrar toda la arquitectura a un entorno de procesamiento distribuido (Big Data). Desarrollé scripts paralelos usando el paradigma RDD y DataFrames distribuidos para agrupar clientes según patrones de consumo (Clustering).</p>
+            <p>Migrar el procesamiento a PySpark con DataFrames distribuidos y Spark SQL. Implementé scripts modulares para limpieza, transformación y clustering de clientes según patrones de consumo.</p>
           </div>
 
           <div class="cs-item glass-card">
@@ -242,12 +284,12 @@
 
           <div class="cs-item glass-card">
             <h4><span class="accent">5.</span> Principales aprendizajes</h4>
-            <p>Asimilé profundamente la arquitectura de Spark, la importancia del particionamiento de datos y cómo la compresión en formato <strong class="accent">Parquet</strong> es tan crítica como el código mismo para asegurar escalabilidad pura.</p>
+            <p>Aprendí la importancia del particionamiento de datos, la serialización en formato <strong class="accent">Parquet</strong> para eficiencia de lectura, y cómo configurar sesiones Spark para optimizar memoria.</p>
           </div>
 
           <div class="cs-item glass-card">
             <h4><span class="accent">6.</span> Métricas de impacto</h4>
-            <p>El pipeline logró extraer, limpiar y modelar exitosamente más de <strong>1.000.000 de registros</strong> sin saturación de memoria, generando gráficos estáticos listos y matrices exportadas ultrarrápidas.</p>
+            <p>El pipeline procesó más de <strong>1.000.000 de registros</strong> sin saturación de memoria, generando datasets limpios y reportes exportados para análisis posterior.</p>
           </div>
 
           <div class="cs-item glass-card">
@@ -257,7 +299,7 @@
 
           <div class="cs-item glass-card">
             <h4><span class="accent">8.</span> Justificación de elección</h4>
-            <p>Elegí este proyecto porque representa el clímax de mi crecimiento técnico. Traspasa el límite de los "datos controlados", forzándome a aplicar la teoría escalar de las "5 V's del Big Data" que aprendí durante el programa.</p>
+            <p>Elegí este proyecto porque demuestra mi capacidad para construir pipelines escalables, trabajar con datos masivos y conectar procesamiento distribuido con análisis de negocio.</p>
           </div>
         </div>
         
@@ -271,7 +313,7 @@
     <section id="contact" class="reveal">
       <h2 class="section-title">Hablemos</h2>
       <div class="glass-card contact-card">
-        <p>¿Tienes una oportunidad interesante o quieres colaborar? Mi bandeja de entrada siempre está lista.</p>
+        <p>Estoy buscando activamente oportunidades como Data Analyst, Data Scientist Jr. o Analytics Engineer Jr. Si tienes un rol abierto o quieres conversar, escríbeme.</p>
         <a href="mailto:nicolas.llanos@alumni.uv.cl" class="btn btn-primary">Envíame un correo</a>
         <div class="social-links mt-4">
           <a href="https://github.com/nicolastllanos" target="_blank">GitHub</a>
