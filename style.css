@@ -129,9 +129,6 @@ h6 {
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1.5rem 5%;
   background: rgba(10, 10, 15, 0.6);
   backdrop-filter: blur(12px);
@@ -139,6 +136,15 @@ h6 {
   border-bottom: 1px solid var(--glass-border);
   z-index: 1000;
   transition: var(--transition);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .glass-nav.scrolled {
@@ -216,6 +222,16 @@ h6 {
   padding: 8rem 1rem 4rem 1rem;
 }
 
+.hero-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .profile-img-container {
   width: 160px;
   height: 160px;
@@ -261,7 +277,7 @@ h6 {
   font-weight: 600;
   font-size: clamp(1.2rem, 2.5vw, 1.6rem);
   margin-bottom: 0.5rem;
-  white-space: nowrap;
+  max-width: 900px; /* Override subtitle max-width to fit on one line on desktop */
 }
 
 .hero-tagline {
@@ -651,6 +667,117 @@ footer {
   margin-top: 4rem;
 }
 
+/* Experience Timeline Styles */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 3rem; /* Space for the timeline vertical line outside cards */
+}
+
+/* Vertical line for the timeline - placed outside cards */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-color) 0%, rgba(123, 44, 191, 0.1) 100%);
+  border-radius: 1px;
+}
+
+.timeline-item {
+  position: relative;
+  /* Symmetrical padding is inherited from .glass-card */
+  margin-bottom: 0.5rem;
+}
+
+/* Timeline dot - placed outside the card aligned with the vertical line */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.3rem; /* Positions the dot outside the card */
+  top: 2.2rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  border: 3px solid var(--bg-color);
+  box-shadow: 0 0 10px var(--accent-glow);
+  z-index: 2;
+  transition: var(--transition);
+}
+
+.timeline-item:hover::before {
+  background: #fff;
+  transform: scale(1.2);
+  box-shadow: 0 0 15px var(--accent-light);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.role-company h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.role-company .company {
+  font-size: 0.95rem;
+  color: var(--accent-light);
+  font-weight: 600;
+}
+
+.date-badge {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  background: rgba(199, 125, 255, 0.1);
+  color: var(--accent-light);
+  border: 1px solid rgba(199, 125, 255, 0.2);
+  border-radius: 20px;
+}
+
+.experience-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.experience-bullets li {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.experience-bullets li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-light);
+  font-weight: bold;
+}
+
+.experience-bullets strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 /* Animations */
 .reveal {
   opacity: 0;
@@ -683,11 +810,34 @@ footer {
   }
 
   .hero-role {
-    white-space: normal;
     font-size: 1.1rem;
   }
 
   .metric-value {
     font-size: 2rem;
+  }
+
+  /* Ajustes móviles para la sección de Experiencia */
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item::before {
+    left: -1.7rem;
+    top: 2.2rem;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .date-badge {
+    align-self: flex-start;
   }
 }
