@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de Nicolás Llanos — Ingeniero Civil Industrial orientado a Data Science, Machine Learning y Analytics. Proyectos con Python, SQL, PySpark y Power BI.">
+  <meta name="description" content="Portafolio de Nicolás Llanos — Ingeniero Civil Industrial orientado a Data Science y Analytics. Proyectos con Python, SQL, PySpark y Excel enfocados en resolver problemas de negocio.">
   <title>Nicolás Llanos | Portafolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,15 +22,18 @@
   <div class="blob blob-3"></div>
 
   <nav class="glass-nav">
-    <div class="logo">nicolastllanos.</div>
-    <ul class="nav-links">
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#education">Formación</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#case-study">Caso de Estudio</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">nicolastllanos.</div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#education">Formación</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#case-study">Caso de Estudio</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main>
@@ -42,8 +45,8 @@
           <img src="perfil.jpg" alt="Nicolás Llanos" class="profile-img" />
         </div>
         <h1 class="glitch-text">Hola, soy <span class="accent">Nicolás Llanos</span></h1>
-        <p class="subtitle hero-role">Ingeniero Civil Industrial | Data Analyst / Data Scientist Jr.</p>
-        <p class="subtitle hero-tagline">Construyo soluciones de analítica, automatización y machine learning para problemas de negocio.</p>
+        <p class="subtitle hero-role">Ingeniero Civil Industrial | Junior Data Scientist | Data & Business Analytics</p>
+        <p class="subtitle hero-tagline">Uso datos para resolver problemas de negocio y apoyar la toma de decisiones estratégicas.</p>
         <div class="cta-group">
           <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
           <!-- CV en pdf -->
@@ -56,7 +59,55 @@
     <section id="about" class="reveal">
       <h2 class="section-title">Sobre mí</h2>
       <div class="glass-card about-card">
-        <p>Soy Ingeniero Civil Industrial orientado a Data Science y Analytics. Trabajo con Python, SQL, Power BI, machine learning y pipelines ETL para transformar datos en decisiones de negocio. Me interesa aportar en roles junior de Data Analyst, Data Scientist Jr. o Analytics Engineer Jr.</p>
+        <p>Ingeniero Civil Industrial orientado a Data Science, con foco en el uso de datos para resolver problemas de negocio y apoyar la toma de decisiones. Cuento con experiencia en integración, automatización y análisis de datos usando Python, SQL, Excel y Power BI. He desarrollado proyectos de machine learning, segmentación de clientes, ETL/Big Data y reporting, además de experiencia laboral en integración de datos desde APIs, automatización de reportes y optimización de procesos. Busco aportar como Junior Data Scientist, Data Analyst o Business Analytics Analyst, combinando capacidad analítica, foco en el impacto y aprendizaje continuo.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experience" class="reveal">
+      <h2 class="section-title">Experiencia Laboral</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item glass-card">
+          <div class="timeline-header">
+            <div class="role-company">
+              <h3>Analista Junior</h3>
+              <span class="company">Federal Seguridad — Santiago, Colina</span>
+            </div>
+            <span class="date-badge">Marzo 2025 – Octubre 2025</span>
+          </div>
+          <ul class="experience-bullets">
+            <li>Centralicé la analítica de marketing mediante un flujo <strong>ETL automatizado en Python</strong>, integrando datos desde las APIs de <strong>HubSpot, Meta y Google</strong> para alimentar dashboards de seguimiento y facilitar el análisis del retorno de campañas.</li>
+            <li>Automaticé el seguimiento de <strong>KPIs de cobranza mediante macros en Excel</strong> para procesar archivos de facturas y monitorear el avance de los ejecutivos contra sus metas, apoyando la gestión de cartera.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item glass-card">
+          <div class="timeline-header">
+            <div class="role-company">
+              <h3>Analista de procesos</h3>
+              <span class="company">Práctica Profesional (Memoria de Título)</span>
+            </div>
+            <span class="date-badge">Enero 2025 – Marzo 2025</span>
+          </div>
+          <ul class="experience-bullets">
+            <li><strong>Optimicé los recursos operacionales</strong> analizando datos de flujo interno y rediseñando procesos clave, logrando una <strong>reducción del 25%</strong> en los tiempos de respuesta.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item glass-card">
+          <div class="timeline-header">
+            <div class="role-company">
+              <h3>Analista Financiero</h3>
+              <span class="company">Alimentos 4M SPA — Santiago, Quinta Normal (Práctica Básica)</span>
+            </div>
+            <span class="date-badge">Julio 2024 – Noviembre 2024</span>
+          </div>
+          <ul class="experience-bullets">
+            <li>Automaticé el análisis y la generación de <strong>reportes financieros mensuales en Excel</strong>, reduciendo el tiempo de elaboración y mejorando la consistencia de la información reportada a dirección.</li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
@@ -146,12 +197,12 @@
         <!-- Proyecto 1: E-commerce Prediccion -->
         <article class="project-card glass-card">
           <div class="project-metrics-display">
-            <span class="metric-value">R² = 0.96</span>
+            <span class="metric-value">R² = 0.9587</span>
             <span class="metric-label">MAE = $9.80</span>
           </div>
           <div class="project-info">
-            <h3>Predicción de Gasto en E-commerce</h3>
-            <p>Comparación de 5 modelos de regresión (Lineal, Ridge, Lasso, KNN, Gradient Boosting) para estimar gasto anual de clientes. La regresión lineal resultó óptima, identificando la antigüedad del cliente como predictor principal (66.5% del gasto).</p>
+            <h3>Predicción de Compras | Machine Learning</h3>
+            <p>Comparé modelos de regresión en Python/Scikit-Learn para estimar el gasto anual de clientes de e-commerce, seleccionando el mejor desempeño e identificando la antigüedad del cliente como la principal variable explicativa de negocio.</p>
             <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> Benchmark de modelos con GridSearchCV,
               validación cruzada K-Fold, limpieza de outliers (IQR) y estandarización Z-Score.</p>
             <div class="project-tags">
@@ -168,11 +219,11 @@
         <article class="project-card glass-card">
           <div class="project-metrics-display">
             <span class="metric-value">+1M</span>
-            <span class="metric-label">Registros Procesados</span>
+            <span class="metric-label">Transacciones Procesadas</span>
           </div>
           <div class="project-info">
-            <h3>Pipeline ETL Distribuido (Retail)</h3>
-            <p>Pipeline de 5 etapas en PySpark sobre el dataset Olist (Kaggle): ingesta de 3 tablas CSV, transformaciones con RDD y DataFrames, agregaciones con Spark SQL, exportación a Parquet y entrenamiento de K-Means + Regresión Logística con MLlib.</p>
+            <h3>Análisis Masivo de Datos Retail | Big Data</h3>
+            <p>Construí un pipeline ETL en Apache Spark/PySpark para procesar +1M transacciones retail, aplicando limpieza, transformación y agregaciones con Spark SQL para generar datasets analíticos orientados a reporting y análisis de negocio.</p>
             <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> PySpark, Spark SQL, Spark MLlib,
               formato Parquet y configuración de SparkSession.</p>
             <div class="project-tags">
@@ -192,8 +243,8 @@
             <span class="metric-label">Clientes VIP Detectados</span>
           </div>
           <div class="project-info">
-            <h3>Segmentación Automática de Clientes</h3>
-            <p>Clustering con K-Means, DBSCAN y jerárquico sobre features RFM de e-commerce. Evaluación con análisis de silueta y visualización de segmentos con PCA y t-SNE para identificar el grupo más rentable.</p>
+            <h3>Segmentación Automática de Clientes | Clustering</h3>
+            <p>Implementé segmentación RFM + K-Means en Python sobre datos transaccionales de e-commerce, identificando un segmento VIP equivalente al 22.8% de la base para apoyar campañas de fidelización y priorización comercial.</p>
             <p class="skill-highlight"><strong>Habilidades clave aplicadas:</strong> K-Means, DBSCAN,
               PCA, t-SNE, análisis de silueta y segmentación RFM.</p>
             <div class="project-tags">
@@ -313,7 +364,7 @@
     <section id="contact" class="reveal">
       <h2 class="section-title">Hablemos</h2>
       <div class="glass-card contact-card">
-        <p>Estoy buscando activamente oportunidades como Data Analyst, Data Scientist Jr. o Analytics Engineer Jr. Si tienes un rol abierto o quieres conversar, escríbeme.</p>
+        <p>Estoy buscando activamente oportunidades como Data Analyst, Business Analyst, Data Scientist Jr. o Analytics Engineer Jr. Si tienes un rol abierto o quieres conversar, escríbeme.</p>
         <a href="mailto:nicolas.llanos@alumni.uv.cl" class="btn btn-primary">Envíame un correo</a>
         <div class="social-links mt-4">
           <a href="https://github.com/nicolastllanos" target="_blank">GitHub</a>
