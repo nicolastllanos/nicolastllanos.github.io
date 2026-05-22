@@ -256,6 +256,43 @@ h6 {
   margin-inline: auto;
 }
 
+.hero-role {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+
+.hero-tagline {
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  margin-bottom: 2.5rem;
+}
+
+/* Skill Tags */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.9rem;
+  background: rgba(199, 125, 255, 0.08);
+  color: var(--text-secondary);
+  border-radius: 20px;
+  border: 1px solid rgba(199, 125, 255, 0.15);
+  transition: var(--transition);
+}
+
+.skill-tag:hover {
+  background: rgba(199, 125, 255, 0.18);
+  color: var(--accent-light);
+  border-color: rgba(199, 125, 255, 0.4);
+  box-shadow: 0 0 12px rgba(199, 125, 255, 0.15);
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -643,5 +680,14 @@ footer {
 
   .cta-group {
     flex-direction: column;
+  }
+
+  .hero-role {
+    white-space: normal;
+    font-size: 1.1rem;
+  }
+
+  .metric-value {
+    font-size: 2rem;
   }
 }
