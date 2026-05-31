@@ -22,6 +22,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-color); /* Respaldo para prevenir fondo blanco en iOS si falla el gradiente */
@@ -29,7 +35,6 @@ body {
   background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.6;
-  overflow-x: hidden;
   position: relative;
   min-height: 100vh;
 }
@@ -56,9 +61,9 @@ h6 {
   margin-bottom: 3rem;
   text-align: center;
   position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  width: max-content;
+  margin-inline: auto;
 }
 
 .section-title::after {
@@ -375,7 +380,7 @@ section {
 /* Education */
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -440,7 +445,7 @@ section {
 /* Projects */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -675,14 +680,13 @@ footer {
   max-width: 900px;
   margin: 0 auto;
   position: relative;
-  padding-left: 3rem; /* Space for the timeline vertical line outside cards */
 }
 
-/* Vertical line for the timeline - placed outside cards */
+/* Vertical line for the timeline - placed outside cards in left margin */
 .timeline::before {
   content: '';
   position: absolute;
-  left: 15px;
+  left: -30px;
   top: 10px;
   bottom: 10px;
   width: 2px;
@@ -696,11 +700,11 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* Timeline dot - placed outside the card aligned with the vertical line */
+/* Timeline dot - placed outside the card aligned with the vertical line in left margin */
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -2.3rem; /* Positions the dot outside the card */
+  left: -37px; /* Placed exactly aligned with the line at -30px (taking size of dot into account) */
   top: 2.2rem;
   width: 14px;
   height: 14px;
