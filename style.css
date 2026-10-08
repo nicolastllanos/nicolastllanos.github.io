@@ -845,3 +845,96 @@ footer {
     align-self: flex-start;
   }
 }
+
+
+/* ==================================================
+   Portfolio positioning refresh
+   ================================================== */
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2.5rem auto 0;
+}
+
+.impact-card {
+  padding: 1.4rem 1rem;
+  text-align: center;
+  border-radius: 16px;
+  transition: var(--transition);
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(199, 125, 255, 0.25);
+}
+
+.impact-value {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent-light);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.impact-label {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.featured-project {
+  border-color: rgba(199, 125, 255, 0.25);
+  box-shadow: 0 15px 45px rgba(123, 44, 191, 0.18), var(--glass-shadow);
+}
+
+.featured-project::before {
+  content: 'BUSINESS ANALYTICS';
+  display: block;
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  z-index: 2;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--accent-light);
+  background: rgba(10, 10, 15, 0.75);
+  border: 1px solid rgba(199, 125, 255, 0.25);
+  border-radius: 20px;
+  padding: 0.35rem 0.65rem;
+}
+
+.featured-project {
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .impact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .impact-card {
+    padding: 1.1rem 0.7rem;
+  }
+
+  .impact-value {
+    font-size: 1.7rem;
+  }
+
+  .impact-label {
+    font-size: 0.72rem;
+  }
+}
